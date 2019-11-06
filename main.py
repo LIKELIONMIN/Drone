@@ -3,7 +3,7 @@ import time
 
 myTello = tello.Tello()
 
-myTello.telloCommnad
+myTello.sendMsg("command")
 myTello.sendMsg("takeoff")
 time.sleep(10)
 myTello.sendMsg("land")
