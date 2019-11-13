@@ -34,3 +34,17 @@ class Tello:
     def telloCommnad(self):
         self.sendMsg("command")
         print("Online")
+
+    def up(self, x):
+        if x> 500 :
+            x= 500
+        if x< 20:
+            x= 20
+        self.sendMsg("up " + str(x)) 
+
+    def down(self, x):
+        if x> 500 :
+            x= 500
+        if x< 20:
+            x= 20
+        self.sendMsg("down " + str(x)) 
