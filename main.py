@@ -23,6 +23,9 @@ time.sleep(5)
 myTello.ccw(30)
 time.sleep(5)
 
+myTello.flip("r")
+time.sleep(5)
+
 
 myTello.sendMsg("land")
 print ("Well Done")
