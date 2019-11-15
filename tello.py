@@ -106,7 +106,7 @@ class Tello:
             y=500
         if y< -500 :
             y=-500
-        #Z축 스피드
+        
         if z>500 :
             z=500
         if z< -500 :
@@ -117,7 +117,7 @@ class Tello:
         if x< 10 :
             x=10
         #미션패드의 번호에 따라 명령 보냄    
-        self.sendMsg("go" 
+        self.sendMsg("go " 
             + str(x) + " " 
             + str(y) + " " 
             + str(z) + " " 
