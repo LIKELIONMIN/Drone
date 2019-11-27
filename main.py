@@ -4,28 +4,41 @@ import time
 myTello = tello.Tello()
 
 myTello.sendMsg("command")
-
+time.sleep(10)
 myTello.sendMsg("takeoff")
 time.sleep(10)
 
-#myTello.up(30)
+myTello.up(10)
+time.sleep(5)
+
+#myTello.down(50)
 #time.sleep(5)
 
-#myTello.down(30)
-#time.sleep(5)
 
 #myTello.left(30)
 #time.sleep(5)
 
-#myTello.cw(30)
+#myTello.right(50)
 #time.sleep(5)
 
-#myTello.ccw(30)
-#time.sleep(5)
+
+#myTello.cw(300)
+#time.sleep(10)
+
+#myTello.ccw(360)
+#time.sleep(10)
 
 #myTello.flip("r")
 #time.sleep(5)
 
+#myTello.flip("l")
+#time.sleep(5)
+
+#myTello.flip("f")
+#time.sleep(5)
+
+#myTello.flip("b")
+#time.sleep(5)
 
 myTello.sendMsg("mon")
 
